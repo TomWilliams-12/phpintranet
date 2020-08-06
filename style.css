@@ -1,0 +1,342 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height:100%;
+}
+
+/*****************
+PAGE HEADER STYLES
+******************/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:15px;
+}
+
+.logo-white{
+    height: 100px;
+    width: 170px;
+}
+
+.navbar-align {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.top-nav li{
+    display: inline-block;
+    margin-right:15px;
+}
+
+.top-nav li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.top-nav li a:hover, .top-nav li a:active {
+    color: #a4a832;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 6px solid #a4a832;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.social-media{
+    display: inline-flex;
+}
+
+.sm-icon {
+    width:50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:35px;
+    padding-right: 10px;
+
+}
+
+/******************
+HOME PAGE CONTENT STYLES
+*******************/
+
+.main-container {
+    min-height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 15px;
+}
+
+#north, #midlands{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.hidden div {
+    display: none;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.regional-buttons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.regional-buttons button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #a4a832;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#northbtn.activebtn, #midlandsbtn.activebtn, .regional-buttons button:hover{
+    background-color: #a4a832;
+    color: white;
+}
+
+.active button{
+    background-color: #a4a832;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #a4a832;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/****************
+PHONE LIST STYLES
+****************/
+#myInput {
+    height:30px;
+    background-repeat: no-repeat;
+    width: 40%;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    margin-bottom: 30px;
+    text-indent: 5px;
+}
+
+#myTable {
+    /* margin:0px auto; */
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+#myTable th, #myTable td {
+    text-align: center;
+    padding: 12px;
+}
+
+#myTable th, #myTable td{
+    border: 1px solid #ddd;
+}
+
+#myTable tr.tableheader, #myTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.phonelist{
+    margin:15px 10%;
+}
+
+input::placeholder {
+    margin-left: 10px;
+}
+
+
+
+/****************
+FOOTER STYLES
+****************/
+
+footer{
+    height: 50px;
+    min-width:100%;
+    color: white;
+    background-color: #4e4c4c;
+    text-align: center;
+    margin-top:-50px;
+    position:relative;
+
+}
+
+.footerText{
+    padding-top: 15px;
+}
+
+
+
+
+/******************
+FORM STYLES
+*******************/
+
+input[type=text]{
+    width:100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+.mreadings{
+    margin: 5px 0;
+}
+
+
+/******************
+SITE PAGE STYLES
+*******************/
+
+#map {
+    height:400px;
+    width:100%;
+}
+
+.site-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px 0 0 20px;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+.site-image{
+    grid-column-start: 1;
+    grid-column-end:2;
+    justify-self: center;
+}
+
+.site-contact {
+    grid-column-start: 2;
+    justify-self: center;
+}
+
+.site-details, .sales-details {
+    padding-right: 20px;
+}
+
+.site-details ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.sales-details ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+/******************
+ADMIN PAGE STYLES
+*******************/
+
+.admin-title{
+    text-align: center;
+    margin: 10px;
+}
+
+.admin-menu li {
+    display: inline;
+}
+
+.admin-buttons-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    appearance: button;
+}
+
+.middle-button {
+    justify-self: center;
+}
+
+.left-button {
+    justify-self: right;
+}
+
+.btn {
+    width: 150px;
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+    border: 1px solid #a4a832;
+    color: #a4a832;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #a4a832;
+    color: white;
+}
+
+.edit-site-form {
+    display: inline;
+}
+
+.edit-sites-container {
+    text-align: center;
+}
