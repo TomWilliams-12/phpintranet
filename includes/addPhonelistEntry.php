@@ -11,7 +11,7 @@ $mobileExtension = $_POST['mobileExtension'];
 $region = $_POST['region'];
 
 
-$sql = "INSERT INTO phonelist (name, jobTitle, phoneNumber, extension, mobileNumber, mobileExtension, region) VALUES ('$name', '$jobTitle', '$phoneNumber', '$extension', '$mobileNumber','$mobileExtension','$region')";
+$sql = "INSERT INTO phonelist (name, jobTitle, phoneNumber, extension, mobileNumber, region) VALUES ('$name', '$jobTitle', '$phoneNumber', '$extension', '$mobileNumber','$region')";
 mysqli_query($conn, $sql);
 
 header("Location: ../admin.php?submit=success");
