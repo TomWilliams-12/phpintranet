@@ -7,6 +7,11 @@ $dbName = "heroku_c9893a73f923e06";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
+}
+
 
 
 // sql to create table
